@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Animation</title>
+</head>
+<body>
+    <header>
+        <nav class="global-menu">
+            <!-- Burger-menu -->
+            <div class="burger-container" id="burger-container">
+                <span>Menu</span>
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+<!-- "HAKAMI" link centered in the header -->
+  <a href="index.html" class="logo">HAKAMI</a>
+          <!-- Navigation links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="menu-link">Home</a></li>
+            <li><a href="grundlaeggendeweb.html" class="menu-link">Grundlæggende Web</a></li>
+            <li><a href="animation.html" class="menu-link">Animation</a></li>
+            <li><a href="passion.html" class="menu-link">Passionsite</a></li>
+            <li><a href="virksomhed.html" class="menu-link">Virksomhedssite</a></li>
+            <li><a href="portfoliosite.html" class="menu-link">Portfoliosite</a></li>
+            <li><a href="aboutme.html" class="menu-link">About me</a></li>
+        </ul>
+    </nav>
+    </header>
+<main>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="./Videos/anivid.mov" type="video/mp4">
+            </video>
+        </div>
+        <h1>Animation</h1>
+        <section class="content-section">
+            <div class="grid-row">
+                <div class="text-content">
+                    <h2>Hvad skulle vi?</h2>
+                    <p>
+                        Vi skulle lave et spil, der både skulle være brugbart og have en klar afslutning. Til projektet brugte vi Adobe Illustrator til at designe figurerne og skabe et visuelt udtryk, der passede til spillets tema. Det var en spændende proces, hvor vi lærte at skabe grafik, der fungerede godt i et digitalt format. Derefter brugte vi JavaScript til at få spillet til at fungere, som for eksempel at tilføje interaktivitet, animationer og logik, der sikrede, at spillet havde en start, en midte og en afslutning.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <h2>Process</h2>
+                    <p>
+                        Jeg startede med at designe en karakter inspireret af noget, jeg selv kunne lide – skating, som var en stor del af min barndom. Jeg ville lave et spil, jeg selv ville finde sjovt, hvor man trykkede på skateboards for at få karakteren til at bevæge sig. Planen var at lave animationer med JavaScript, så karakteren rykkede sig gennem spillet, men undervejs blev det mere udfordrende, end jeg havde forventet.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="grid-row">
+                <div class="image-content">
+                    <img src="./img/crazyflip.svg" alt="crazyflip">
+                </div>
+
+            <div class="image-content">
+                    <img src="./img/slideflip.svg" alt="slideflip">
+                </div>
+              
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <div class="grid-row">
+                <div class="text-content">
+                    <h2>Endelige produkt</h2>
+                    <p>
+                        Jeg lavede et spil baseret på score, hvor man dør, hvis man ikke trykker på skateboardene. Der var mange detaljer, jeg gerne ville forbedre, men tiden var knap, især fordi koden til at få skateren til at lave et nyt trick ved hvert klik var mere kompliceret, end jeg havde forventet. Selvom nogle ting blev lidt rushed, synes jeg, ideen var sjov, og spillet fungerede fint til formålet.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <h2>Hvad jeg kunne bringe videre</h2>
+                    <p>
+                        Jeg har lært meget fra arbejdet med animationer i JavaScript og Illustrator. Illustrator har hjulpet mig med at designe detaljerede figurer og baggrunde, og ved at bruge lag, gør jeg det lettere at animere senere. Jeg kan eksportere grafikken som SVG og animere den med CSS eller JavaScript. JavaScript har givet mig en forståelse for interaktive animationer, men jeg har stadig meget at lære om at forenkle dem. Jeg vil også gerne udforske animationsbiblioteker som GSAP for at skabe mere professionelle bevægelser. Projektet har inspireret mig til at kombinere design og kode mere.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid_1-1-1">
+            <div class="image-item">
+                <img src="./img/win.svg" alt="win pic">
+            </div>
+            <div class="image-item">
+                <img src="./img/learn.svg" alt="Skateboard">
+            </div>
+            <div class="image-item">
+                <img src="./img/lose.svg" alt="lose pic">
+            </div>
+        </section>
+
+       
+
+
+</main>
+
+<a href="http://www.hakami.dk/site/spil.html" class="redirect-button">Go to Website</a>
+
+    <footer>
+        <!-- Lottie animation -->
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/2da84c56-3bfc-4f60-96b5-04f67f5c4171/31fa3b6Nvv.lottie" background="transparent" speed="1"  loop autoplay></dotlottie-player>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

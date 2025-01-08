@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Forside</title>
+</head>
+<body>
+    <header>
+        <nav class="global-menu">
+            <!-- Burger-menu -->
+            <div class="burger-container" id="burger-container">
+                <span>Menu</span>
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+<!-- "HAKAMI" link centered in the header -->
+  <a href="index.html" class="logo">HAKAMI</a>
+          <!-- Navigation links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="menu-link">Home</a></li>
+            <li><a href="grundlaeggendeweb.html" class="menu-link">Grundlæggende Web</a></li>
+            <li><a href="animation.html" class="menu-link">Animation</a></li>
+            <li><a href="passion.html" class="menu-link">Passionsite</a></li>
+            <li><a href="virksomhed.html" class="menu-link">Virksomhedssite</a></li>
+            <li><a href="portfoliosite.html" class="menu-link">Portfoliosite</a></li>
+            <li><a href="aboutme.html" class="menu-link">About me</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="slideshow-container">
+        <!-- Slideshow videos -->
+        <video class="video-slide" id="video1" autoplay muted>
+            <source src="./Videos/figmavideo.mov" type="video/mp4">
+        </video>
+        <video class="video-slide" id="video2" autoplay muted>
+            <source src="./Videos/animationvideo.mov" type="video/mp4">
+        </video>
+        <video class="video-slide" id="video3" autoplay muted>
+            <source src="./Videos/Eliusvideo.mov" type="video/mp4">
+        </video>
+        <video class="video-slide" id="video4" autoplay muted>
+            <source src="./Videos/theknifeguyvid.mov" type="video/mp4">
+        </video>
+    </div>
+
+<section class="content-section">
+    <div class="grid-row">
+        <div class="text-content">
+            <h2>Hvad er dette?</h2>
+            <p>
+                Denne portfolio er lavet til at fremvise alt der er blevet lavet igennem det sidste semester på Multimediedesign, og alle de forskellige projekter som jeg har lavet. Det har været en udvikling for at være der hvor vi er i dag, men det har taget mange timer at lære hvordan man koder, laver digtialt kunst og redigering af film. Dette site kommer til at fremvise hvad mine fremskidt igennem noget som er helt nyt for mig. 
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="./img/kode.png" alt="kode">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="image-content">
+            <img src="./img/crazyflip.svg" alt="crazyflip">
+        </div>
+        <div class="text-content">
+            <h2>Hvad har vi lavet?</h2>
+            <p>
+          Under det sidste semester har vi arbejdet med forskellige emner, som har været en større udvikling til at kunne lave hjemmesider som ser har deres eget visuelle udryk. Vi har skulle først arbejde med, hvordan man koder et website, som er grundlæggende web, lavet animation til et spil, lavet passionsites for små virksomheder, samt hjemmesider for store virksomheder. Det har alt været et opløb til denne portfolio og her vil jeg fremvise vores forskellige websites og fremgangs metoden af dem. 
+            </p>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <!-- Lottie animation -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <dotlottie-player src="https://lottie.host/2da84c56-3bfc-4f60-96b5-04f67f5c4171/31fa3b6Nvv.lottie" background="transparent" speed="1"  loop autoplay></dotlottie-player>
+</footer> 
+    <script src="script.js"></script>
+</body>
+</html>

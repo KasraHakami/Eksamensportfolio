@@ -1,0 +1,353 @@
+/* Generel reset */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #FEFCF5;
+    z-index: 999;
+    height: 50px; /* Juster højden på headeren her */
+    
+}
+.grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 60px; /* Afstand mellem billederne */
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grid-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+    align-items: center; /* Vertikal centrering */
+    justify-content: center; /* Horisontal centrering */
+    gap: 20px; /* Mellemrum mellem billeder */
+
+}
+
+/* Grid item (billeder) */
+.image-item {
+    width: 100%;
+    height: auto;
+    max-width: 1200px; /* Maksimal bredde på containeren */
+    margin: 0 auto; /* Centrerer containeren, hvis der er ekstra plads */
+    
+}
+
+.image-item img {
+    width: 100%; /* Gør at billedet fylder hele containerens bredde */
+    height: auto; /* Bevarer billedets aspect ratio */
+}
+
+html, body {
+    height: 100%; /* Fylder hele browserens højde */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Lodret struktur */
+    overflow-x: hidden;
+}
+main {
+    flex: 1; /* Fylder al den tilgængelige plads */
+    margin: 0; /* Fjern utilsigtede margener */
+   
+}
+
+@font-face {
+    font-family: 'Thunky';
+    src: url('./assets/thunky-demo/Thunky\ DEMO.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/Poppins/Poppins-Regular.ttf') format('truetype');
+  }
+
+/* Body styling */
+body {
+    font-family: 'Thunky';
+    background-color: #F5ECD9;
+
+}
+
+.aboutme{
+    margin-top: 120px;
+}
+
+.Me_image{
+    width: 500px;
+    height: 800px;
+
+}
+
+/* Slideshow-container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 80vh; /* Slideshowet fylder 80% af skærmens højde */
+    margin-top: 80px; /* Giver plads til headeren */
+}
+
+/* Videoer i slideshowet */
+.video-slide {
+    display: none; /* Videoer er skjult som standard */
+    width: 100%; /* Fylder hele containeren */
+    height: 100%; /* Fylder hele containerens højde */
+    object-fit: cover; /* Sørger for, at videoen fylder hele containeren uden at blive forvrænget */
+}
+
+/* Vis kun én video ad gangen */
+.video-slide.active {
+    display: block; /* Videoen bliver synlig */
+}
+
+/* Styling for "HAKAMI" logoet */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px); /* Center horizontalt og gør den lavere */
+    font-size: 60px; /* Adjust font size */
+    color: #BFB48E;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Footer styling */
+footer {
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 0; /* Fjern uønsket margin */
+    padding: 10px; /* Tilpas padding efter behov */
+}
+
+
+/* Global menu styling */
+.global-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #FEFCF5;
+    color: #BFB48E;
+}
+
+/* Burger-menu container */
+.burger-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #BFB48E;
+    font-size: 40px;
+}
+
+/* Burger-menu styling */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #BFB48E;
+}
+
+
+
+/* Navigation links */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #FEFCF5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #BFB48E;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 50px;
+    width: auto; 
+    height: auto; 
+    border-radius: 5px;
+  }
+  
+  .redirect-button:hover {
+    background-color: #0056b3;
+  }
+/* til grids og billeder */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3em; 
+    padding: 2em;
+}
+
+
+.text-content {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    max-width: 50vh;
+    align-items: center;
+
+}
+
+.text-content h2 {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+    font-family: 'Thunky';
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 600px; 
+    object-fit: cover;
+}
+
+.image-content{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Swiss,
+.container-elius{
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.studio,
+.knive{
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+
+/* videoer til hjemmesider */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Fylder hele skærmen */
+    overflow: hidden;
+}
+
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sikrer at videoen dækker hele området */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.kode {
+    z-index: 2;
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+}
+p{
+    max-width: 65ch;
+}
+
+h1 {
+    font-size: 6rem; /* Gør h1 stor */
+    color: #000000; /* Farve på teksten */
+    text-align: center; /* Centrerer teksten inde i h1 */
+    border-bottom: 3px solid #333; /* Tilføjer en streg under */
+    padding-bottom: 10px; /* Giver lidt afstand mellem teksten og stregerne */
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .grid-row {
+        grid-template-columns: 1fr; 
+        text-align: center;
+ 
+    }
+    
+.grid_1-1-1 {
+        grid-template-columns: 1fr; /* 1 kolonne på små skærme */
+    }
+
+    .image-content img {
+        margin: 0 auto;
+    }
+
+    .global-menu {
+        justify-content: space-between; /* Juster menupositionen på mobil */
+    }
+
+    /* Ændrer navigationens layout på mobil */
+    .nav-links {
+        position: static;
+        display: none; 
+        flex-direction: column; 
+        gap: 15px;
+        width: 100%; 
+        padding: 15px;
+        background-color: #FEFCF5;
+    }
+
+    /* Når burger-menuen er aktiv og menuen kommer frem */
+    .nav-links.active {
+        display: flex;
+        position: relative; /* Position ændret */
+    }
+
+    .burger-container {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+    }
+
+    /* på mobil */
+    .logo {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
